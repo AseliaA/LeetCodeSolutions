@@ -9,6 +9,7 @@ public class Richest_Customer_Wealth_1672 {
         System.out.println(maximumWealth(array1));
     }
 
+    //v1
     public static int maximumWealth(int[][] accounts) {
         int richestAmount = 0;
         for (int i = 0; i < accounts.length; i++) {
