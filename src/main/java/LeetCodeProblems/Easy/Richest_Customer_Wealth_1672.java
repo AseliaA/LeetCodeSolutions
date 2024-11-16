@@ -1,4 +1,4 @@
-package Easy;
+package LeetCodeProblems.Easy;
 
 public class Richest_Customer_Wealth_1672 {
     public static void main(String[] args) {

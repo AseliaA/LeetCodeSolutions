@@ -1,4 +1,4 @@
-package Easy;
+package LeetCodeProblems.Easy;
 
 import java.util.ArrayList;
 import java.util.List;
