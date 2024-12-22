@@ -1,6 +1,6 @@
 package LeetCodeProblems.Easy;
 
-public class Number_of_Steps_to_Reduce_a_Number_to_Zero_1342 {
+public class NumberOfStepsToReduceANumberToZero_1342 {
     public static void main(String[] args) {
         System.out.println(numberOfSteps(14)); //output: 6
         System.out.println(numberOfSteps(8)); //output: 4

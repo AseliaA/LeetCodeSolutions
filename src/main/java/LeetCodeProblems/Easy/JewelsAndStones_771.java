@@ -1,6 +1,6 @@
 package LeetCodeProblems.Easy;
 
-public class Jewels_and_Stones_771 {
+public class JewelsAndStones_771 {
     public static void main(String[] args) {
         System.out.println(numJewelsInStones("aA", "aAAbbbb")); //3
         System.out.println(numJewelsInStones("z", "ZZ")); //0

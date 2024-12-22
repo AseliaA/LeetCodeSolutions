@@ -2,7 +2,7 @@ package LeetCodeProblems.Easy;
 
 import java.util.Arrays;
 
-public class Running_Sum_Of_1d_Array_1480 {
+public class RunningSumOf1dArray_1480 {
     public static void main(String[] args) {
         System.out.println(Arrays.toString(runningSum(new int[]{1, 2, 3, 4})));
         System.out.println(Arrays.toString(runningSum(new int[]{1, 1, 1, 1, 1})));

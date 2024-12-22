@@ -1,6 +1,6 @@
 package LeetCodeProblems.Easy;
 
-public class Richest_Customer_Wealth_1672 {
+public class RichestCustomerWealth_1672 {
     public static void main(String[] args) {
         int[][] array1 = new int[][]{
                 {1, 2, 3},
