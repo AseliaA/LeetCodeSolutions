@@ -4,6 +4,7 @@ public class NumberOf1Bits_191 {
     public static void main(String[] args) {
         System.out.println("(v1-2) -> " +hammingWeight(12) + " - BitWise: " + bitWise(12));
         System.out.println("(v3) -> " + hammingWeightBrianKernighansAlgo(12) + " - BitWise: " + bitWiseBuildInMethod(12));
+        System.out.println("(v4) -> " + hammingWeightBuildInMethod(12));
 
 //        System.out.println(hammingWeight(29) + " - BitWise: " + bitWise(29));
 //        System.out.println(hammingWeight(11) + " - BitWise: " + bitWise(11));
@@ -11,7 +12,18 @@ public class NumberOf1Bits_191 {
 //        System.out.println(hammingWeight(2147483645) + " - BitWise: " + bitWise(2147483645));
     }
 
+    //v4
+    //Time Complexity: O(log n) - very fast, java optimized native code
+    //Memory Complexity: O(1)
+    //Algo Class, Azret's Solution
+    public static int hammingWeightBuildInMethod(int n){
+        return Integer.bitCount(n);
+    }
+
     //v3
+    //Time Complexity: O(k) - depending how many "1" bits(k) are in n
+    //Memory Complexity: O(1)
+    //AI Suggestion
     public static int hammingWeightBrianKernighansAlgo(int n){
         int hammingWeight = 0;
 
