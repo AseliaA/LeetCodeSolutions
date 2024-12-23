@@ -4,13 +4,17 @@ import java.util.Arrays;
 
 public class ValidAnagram_242 {
     public static void main(String [] args){
-//        System.out.println(isAnagram("anagram", "nagaram"));
-//        System.out.println(isAnagram("rat", "car"));
+        System.out.println(isAnagram("anagram", "nagaram"));
+        System.out.println(isAnagram("rat", "car"));
 
         System.out.println(isAnagram2("anagram", "nagaram"));
         System.out.println(isAnagram2("rat", "car"));
     }
 
+    //v2
+    //Time Complexity: O(n)
+    //Memory Complexity: O(1)
+    //Time took: 20 minutes with AI
     public static boolean isAnagram2(String s, String t){
         if(s.length() != t.length()) return false;
 
@@ -34,7 +38,7 @@ public class ValidAnagram_242 {
     //Time took: 10 minutes by myself
     public static boolean isAnagram(String s, String t){
         char [] sArray = s.toCharArray();
-        char [] tArray = s.toCharArray();
+        char [] tArray = t.toCharArray();
 
         Arrays.sort(sArray);
         Arrays.sort(tArray);
