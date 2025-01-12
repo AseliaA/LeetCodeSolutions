@@ -11,6 +11,28 @@ public class ValidAnagram_242 {
         System.out.println(isAnagram2("rat", "car"));
     }
 
+    //Azret's version
+    public static boolean isAnagramAzret2(String s, String t) {
+        int [] freq = new int [26];
+
+        for(int i = 0; i < freq.length; i++) freq[s.charAt(i) - 'a']++;
+        for(int i = 0; i < freq.length; i++) freq[s.charAt(i) - 'a']--;
+        for(int f : freq) if (f != 0) return false;
+        return true;
+    }
+
+
+    //Azret's version, less performative one
+    public static boolean isAnagramAzret1(String s, String t){
+        char [] sArray = s.toCharArray();
+        char [] tArray = t.toCharArray();
+
+        Arrays.sort(sArray);
+        Arrays.sort(tArray);
+
+        return Arrays.equals(sArray, tArray);
+    }
+
     //v2
     //Time Complexity: O(n)
     //Memory Complexity: O(1)

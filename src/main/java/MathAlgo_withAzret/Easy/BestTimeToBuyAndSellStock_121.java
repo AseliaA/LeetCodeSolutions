@@ -5,6 +5,22 @@ public class BestTimeToBuyAndSellStock_121 {
         System.out.println(maxProfit(new int[]{7, 1, 5, 3, 6, 4}));
         System.out.println(maxProfit(new int[]{7, 6, 4, 3, 1}));
         System.out.println(maxProfit(new int[]{2, 4, 1}));
+
+
+
+        System.out.println("\n_____________\n" + maxProfitAzret(new int[]{7, 1, 5, 3, 6, 4}));
+        System.out.println(maxProfitAzret(new int[]{7, 6, 4, 3, 1}));
+    }
+
+    //Azret's version.
+    public static int maxProfitAzret(int [] prices) {
+        int lowestPriceSoFar = prices[0];
+        int highestProfit = 0;
+        for (int todaysPrice : prices) {
+            lowestPriceSoFar = Math.min(lowestPriceSoFar, todaysPrice);
+            highestProfit = Math.max(highestProfit, todaysPrice - lowestPriceSoFar);
+        }
+        return highestProfit;
     }
 
     //v5 - Runtime: 0ms, beats 100% | Memory: 41.33mb, beats 94.54%
