@@ -6,10 +6,25 @@ public class NumberOf1Bits_191 {
         System.out.println("(v3) -> " + hammingWeightBrianKernighansAlgo(12) + " - BitWise: " + bitWiseBuildInMethod(12));
         System.out.println("(v4) -> " + hammingWeightBuildInMethod(12));
 
+        System.out.println("my ver: 12 -> " + numberOfBits(12));
+        System.out.println("my ver: 12 -> " + numberOfBits(11));
+
 //        System.out.println(hammingWeight(29) + " - BitWise: " + bitWise(29));
 //        System.out.println(hammingWeight(11) + " - BitWise: " + bitWise(11));
 //        System.out.println(hammingWeight(128) + " - BitWise: " + bitWise(128));
 //        System.out.println(hammingWeight(2147483645) + " - BitWise: " + bitWise(2147483645));
+    }
+
+    //after watching bits lesson from Azret
+    public static int numberOfBits(int n){
+        int number = 0;
+        for(int i = 0; i < 30; i++) {
+            int bitmask = 1 << i;
+            if((n & bitmask) > 0){
+                number++;
+            }
+        }
+        return number;
     }
 
     //v4
