@@ -1,4 +1,4 @@
-package MathAlgo_withAzret.Easy;
+package MathAlgo_withAzret.Easy.week_10;
 
 public class SingleNumber_136 {
     public static void main(String[] args) {
