@@ -23,7 +23,7 @@ public class SingleNumber_136 {
     //v4 - Runtime: 1ms, beats 99.90% | Memory: 45.95mb, beats 75.78%
     //Time Complexity: O(n)
     //Memory Complexity: O(1)
-    // Time took: 10 minutes by myself after watching the lesson recording, but without seeking the ready solution
+    // Time took: 10 minutes by myself after watching the lesson recording, but without seeing the ready solution
     public static int singleNumber_myVer(int[] nums) {
         int result = nums[0];
         int xorItem = 1;
