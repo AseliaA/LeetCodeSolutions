@@ -1,6 +1,5 @@
 Status:
-- **Required (minimal) - In Progress**
-- Majority Element (169) - 
-
+- **Required (minimal) - COMPLETED 🟢
+- 
 Assignment, Week 11
 ----------------------------------------
