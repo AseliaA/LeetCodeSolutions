@@ -6,8 +6,8 @@ public class PartitionArrayAccordingToGivenPivot_2161 {
     public static void main(String [] args) {
         System.out.println(Arrays.toString(pivotArray_ver1Azret(new int[]{9,12,5,10,14,3,10}, 10)));
     }
+
     //Ver1 from Azret
-    //Quick-Sort Algorithm
     //Time complexity: O(3n) -> O(n)
     //Memory complexity: O(n) + O(1) -> O(n)
     public static int [] pivotArray_ver1Azret(int [] nums, int pivot) {
