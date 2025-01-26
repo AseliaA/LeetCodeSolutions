@@ -1,5 +1,5 @@
 Status:
-- **Required (minimal) - In Progress**
+- **Required (minimal) - COMPLETED**
 
 Assignment, Week 12
 ----------------------------------------
