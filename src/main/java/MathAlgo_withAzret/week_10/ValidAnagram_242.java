@@ -1,4 +1,4 @@
-package MathAlgo_withAzret.Easy.week_10;
+package MathAlgo_withAzret.week_10;
 
 import java.util.Arrays;
 

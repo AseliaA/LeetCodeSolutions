@@ -20,7 +20,8 @@ public class TwoPointers {
         After sorting, it becomes [0,1,9,16,100].
         */
         int [] newNumArray = sortedSquares(new int[]{-4, -1, 0, 3, 10});
-        System.out.println(Arrays.toString(newNumArray));
+        System.out.println(
+                Arrays.toString(newNumArray));
     }
 
     public static boolean checkIfPalindrome(String string) {

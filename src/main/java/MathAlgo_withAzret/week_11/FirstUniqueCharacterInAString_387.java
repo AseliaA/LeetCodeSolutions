@@ -1,4 +1,4 @@
-package MathAlgo_withAzret.Easy.week_11;
+package MathAlgo_withAzret.week_11;
 
 import java.util.HashMap;
 import java.util.Map;

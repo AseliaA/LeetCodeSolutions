@@ -1,4 +1,4 @@
-package MathAlgo_withAzret.Easy.week_13;
+package MathAlgo_withAzret.week_13;
 
 import java.util.HashSet;
 

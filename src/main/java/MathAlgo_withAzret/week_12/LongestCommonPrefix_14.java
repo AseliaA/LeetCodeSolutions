@@ -1,4 +1,4 @@
-package MathAlgo_withAzret.Easy.week_12;
+package MathAlgo_withAzret.week_12;
 
 public class LongestCommonPrefix_14 {
     public static void main(String [] args) {
