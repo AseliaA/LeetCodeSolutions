@@ -10,6 +10,8 @@ public class SortColors_75_Medium {
         System.out.println(Arrays.toString(sortColors_OnePass(new int[]{2,0,2,1,1,0})));
         System.out.println(Arrays.toString(sortColors_OnePass(new int[]{2,0,1})));
     }
+
+    //TODO Need to come back and repeat the algo, didn't understand fully
     //ChatGPT Suggestion: Dutch National Flag Algorithm (One-Pass Solution)
     public static int[] sortColors_OnePass(int [] nums) {
         int left = 0, middle = 0, right = nums.length - 1;
