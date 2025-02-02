@@ -1,8 +1,6 @@
 package MathAlgo_withAzret.week_13;
 
-import java.util.HashMap;
-import java.util.Map;
-import java.util.Stack;
+import java.util.*;
 
 public class ValidParentheses_20_Easy {
     public static void main(String[] args) {
@@ -14,6 +12,27 @@ public class ValidParentheses_20_Easy {
         System.out.println(isValid_ver1(")"));
         System.out.println(isValid_ver1("{[)]}"));
     }
+
+    //Other version, need to look up new DSA ArrayDeque<>()
+//    public boolean isValid(String s) {
+//        Deque<Character> stack = new ArrayDeque<>();
+//        Map<Character, Character> map = Map.of(
+//                ')', '(',
+//                ']', '[',
+//                '}', '{'
+//        );
+//
+//        for (char ch : s.toCharArray()) {
+//            if (!map.containsKey(ch)) {
+//                stack.push(ch);
+//            } else {
+//                if (stack.isEmpty() || stack.pop() != map.get(ch)) {
+//                    return false;
+//                }
+//            }
+//        }
+//        return stack.isEmpty();
+//    }
 
     //Time comp: O(n)
     //Memory comp: O(n)
