@@ -1,4 +1,4 @@
-package MathAlgo_withAzret.week_13;
+package FoundationsForDiscreteMathematicsandDSA_withAzret.week_13;
 
 public class AddBinary_67_Easy {
     public static void main(String [] args) {

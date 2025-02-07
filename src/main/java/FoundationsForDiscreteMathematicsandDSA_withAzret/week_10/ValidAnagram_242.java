@@ -1,4 +1,4 @@
-package MathAlgo_withAzret.week_10;
+package FoundationsForDiscreteMathematicsandDSA_withAzret.week_10;
 
 import java.util.Arrays;
 

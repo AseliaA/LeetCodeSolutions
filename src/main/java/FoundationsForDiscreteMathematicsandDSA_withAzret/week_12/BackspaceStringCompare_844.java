@@ -1,4 +1,4 @@
-package MathAlgo_withAzret.week_12;
+package FoundationsForDiscreteMathematicsandDSA_withAzret.week_12;
 
 public class BackspaceStringCompare_844 {
     public static void main(String [] args) {

@@ -1,4 +1,4 @@
-package MathAlgo_withAzret.week_11;
+package FoundationsForDiscreteMathematicsandDSA_withAzret.week_11;
 
 public class ReverseBits_190 {
     public static void main(String [] args) {

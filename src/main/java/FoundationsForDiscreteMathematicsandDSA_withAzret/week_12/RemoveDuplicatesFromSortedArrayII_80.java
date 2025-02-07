@@ -1,6 +1,4 @@
-package MathAlgo_withAzret.week_12;
-
-import java.util.Arrays;
+package FoundationsForDiscreteMathematicsandDSA_withAzret.week_12;
 
 public class RemoveDuplicatesFromSortedArrayII_80 {
     public static void main(String [] args) {
