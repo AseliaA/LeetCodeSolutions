@@ -17,7 +17,7 @@ public class SortColors_75_Medium {
         int twosInsertPosition = nums.length - 1;
         int i = 0;
 
-        while (i < twosInsertPosition) {
+        while (i <= twosInsertPosition) {
             if (nums[i] == 0) {
                 swap(nums, zerosInsertPosition++, i++);
             } else if (nums[i] == 1) {
