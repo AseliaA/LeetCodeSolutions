@@ -13,8 +13,8 @@ public class SortArrayByParityII_922_Easy {
         int n = nums.length;
 
         while (evens < n && odds < n) {
-            if (/*evens < n && */nums[evens] % 2 == 0) evens += 2;
-            if (/*odds < n && */nums[odds] % 2 == 1) odds += 2;
+            while (evens < n && nums[evens] % 2 == 0) evens += 2;
+            while (odds < n && nums[odds] % 2 == 1) odds += 2;
 
             if (evens < n && odds < n) swap(nums, evens, odds);
         }
