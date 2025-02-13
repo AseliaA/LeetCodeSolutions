@@ -7,6 +7,22 @@ public class LinkedListCycle_141_Easy {
 
     }
 
+    //ver2, optimal -> Floyd's Tortoise and Hare Algorithm
+    //Time Comp: O(n)
+    //Memory Comp: O(1)
+//    public static boolean hasCycle(ListNode head) {
+//        LeetCode slow = head;
+//        LeetCode fast = head;
+//
+//        while (fast != null && fast.next != null) {
+//            slow = slow.next;
+//            fast = fast.next.next;
+//
+//            if(slow == fast) return true;
+//        }
+//        return false;
+//    }
+
     //Ver1 from Editorial on LeetCode, not the most optimal solution
     //Time Comp: O(n)
     //Memory Comp: O(n)
