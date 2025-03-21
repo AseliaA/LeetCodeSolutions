@@ -17,6 +17,12 @@ public class SubarraySumEqualsK_560_Medium {
 
         for (int i = 0; i < nums.length; i++) {
             currentPrefixSum += nums[i];
+
+            counter += prefixSumSeenCount.getOrDefault(currentPrefixSum, 0);
+            prefixSumSeenCount.put(
+                    currentPrefixSum,
+                    prefixSumSeenCount.getOrDefault(currentPrefixSum, 0) + 1);
         }
+        return counter;
     }
 }
