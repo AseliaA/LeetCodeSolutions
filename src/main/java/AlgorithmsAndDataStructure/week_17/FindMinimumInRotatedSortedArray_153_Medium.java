@@ -5,7 +5,7 @@ public class FindMinimumInRotatedSortedArray_153_Medium {
 
     }
 
-    //my version -> needs work, but solves
+    //my version -> solves for some, doesn't solve for others -> Wrong
     public static int findMin(int[] nums) {
         int n = nums.length;
         if (nums == null || n == 0) return 0;
@@ -20,7 +20,8 @@ public class FindMinimumInRotatedSortedArray_153_Medium {
         while (left <= right) {
             int middle = left + (right - left) / 2;
 
-            if (nums[middle] > nums[middle + 1]) {
+//            if (nums[middle] > nums[middle + 1]) { IndexOutOfBounds error
+            if (middle < nums.length - 1 && nums[middle] > nums[middle + 1]){
                 left = middle + 1;
             } else {
                 answer = nums[middle];
