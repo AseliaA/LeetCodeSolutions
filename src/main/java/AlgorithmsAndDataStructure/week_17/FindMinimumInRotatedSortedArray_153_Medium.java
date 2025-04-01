@@ -5,6 +5,26 @@ public class FindMinimumInRotatedSortedArray_153_Medium {
 
     }
 
+    //3rd version, best version
+    public static int findMin3(int[] nums) {
+        if (nums.length == 0) return 0;
+        if (nums.length == 1) return nums[0];
+
+        int left = 0;
+        int right = nums.length - 1;
+
+        while (left < right) {
+            int middle = left + (right - left) / 2;
+
+            if (nums[middle] > nums[right]) {
+                left = middle + 1;
+            } else {
+                right = middle;
+            }
+        }
+        return nums[right];
+    }
+
     //my version -> solves for some, doesn't solve for others -> Wrong
     public static int findMin(int[] nums) {
         int n = nums.length;
