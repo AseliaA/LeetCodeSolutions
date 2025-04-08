@@ -1,8 +1,5 @@
 package AlgorithmsAndDataStructure.week_19;
 
-import java.util.HashMap;
-import java.util.Map;
-
 public class TowersOfHanoi_3050 {
     public static void main(String[] args) {
         hanoi(3, 1, 3);
