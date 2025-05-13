@@ -14,7 +14,7 @@ public class MergeTwoSortedLists_21_Easy {
             return l1;
         }
 
-        if (l1.val < l2.val) {
+        if (l1.val <= l2.val) {
             l1.next = merge(l1.next, l2);
             return l1;
         }
