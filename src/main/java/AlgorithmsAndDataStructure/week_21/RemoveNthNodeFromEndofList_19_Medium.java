@@ -5,6 +5,30 @@ public class RemoveNthNodeFromEndofList_19_Medium {
 
     }
 
+    public static ListNode removeNthFromEnd2(ListNode head, int n) {
+        if (head == null) {
+            return null;
+        }
+
+        ListNode dummy = new ListNode(0);
+        dummy.next = head;
+
+        ListNode fastPointer = dummy;
+        ListNode slowPointer = dummy;
+        for (int i = 0; i <= n; i++) {
+            fastPointer = fastPointer.next;
+        }
+
+        while (fastPointer != null) {
+            fastPointer = fastPointer.next;
+            slowPointer = slowPointer.next;
+        }
+
+        ListNode target = slowPointer.next;
+        slowPointer.next = target.next;
+        return dummy.next;
+    }
+
     //Time complexity: O(2n) -> O(n)
     //Space complexity: O(1)
     // Two cycle solution
