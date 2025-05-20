@@ -12,6 +12,8 @@ public class EvaluateReversePolishNotation_150_Medium {
         System.out.println(evalRPN(new String[]{"10","6","9","3","+","-11","*","/","*","17","+","5","+"}));
     }
 
+    //Time Complexity - O(n)
+    //Space Complexity - O(n)
     public static int evalRPN(String[] tokens) {
         if (tokens == null || tokens.length == 0) return 0;
 
